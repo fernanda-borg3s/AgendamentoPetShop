@@ -1,0 +1,42 @@
+// Import all of Bootstrap’s CSS
+@import "bootstrap/scss/bootstrap";
+
+:root {
+  --bg-primary: #151515;
+  --bg-secondary: #1e1e1e;
+  --bg-tenrtiary: #23242c;
+  --bg-brand: #9282fa;
+  --bg-highlights: #bdb4fa;
+
+  --border-primary: #3e3c41;
+  --border-secondary: #86818c;
+  --border-divisor: #353339; 
+
+  
+  --font-family: "Inter", sans-serif;
+//    font-family: "Inter Tight", sans-serif;
+
+    --ff-title: "Inter Tight", sans-serif;
+}
+
+body{
+    background: var(--bg-primary);
+    color: white;
+}
+a{
+    text-decoration: none;;
+}
+div.logo{
+    width: 153px;
+    height: 48px;
+    background: var(--border-primary);
+    border-radius: 0px 0px 12px 0px;
+    h1{
+        font-size: 16px;
+    }
+}
+div.card{
+    background-color: var(--bg-secondary);
+    color: #fff;
+}
+
