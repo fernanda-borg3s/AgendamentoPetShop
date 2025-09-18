@@ -1,0 +1,9 @@
+div.card{
+    background-color: var(--bg-secondary);
+    color: #fff;
+    border-radius: 10px;
+   
+}
+div.card-header, div.details{
+    border-bottom: .5px solid var(--border-divisor)!important;
+}

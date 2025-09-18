@@ -11,43 +11,118 @@
 <body>
     <header>
         <div class="logo d-flex align-items-center justify-content-center">
-            <img src="/src/assets/Logo.png" alt="">
-            <h1 class="p-2">MUNDO PET</h1>
+            <img src="/src/assets/Logo.png" alt="" >
+            <h1 class="ps-2 fs-6 m-0">MUNDO PET</h1>
         </div>
     </header>
-    <div class="container gap-3" fluid>
-  <div class="row">
-    <div class="col">
-        <h1>Sua Agenda</h1>
-        <p>Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
-        <input type="date" id="data">
-    </div>
-    <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0">
-        <div class="card">
-        <div class="card-body">
-            <div class="d-flex flex-row justify-content-between align-items-center">
-                <div class="d-flex flex-row">
-                    <img src="" alt="">
-                    <h5>Manhã</h5>
+    <div class="container mb-4" fluid>
+    
+            <div class="p-2 mb-4 d-flex flex-column cabecalho">
+                <div>
+                    <h1 class="fs-4 fw-bold lh-base">Sua agenda</h1>
+                    <p class="pb-2">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
                 </div>
                 <div>
-                    <p>09h-12h</p>
+                    <!-- <input type="date" id="data"> -->
+                     <div class="date-input fs-6" tabindex="0" role="button" aria-label="Selecionar data">
+                        <img src="./src/assets/icons/Calendar.png" alt="Ícone de calendário" class="icon" />
+                        <span class="date-text">10/01/2024</span>
+                        <img src="./src/assets/icons/arrow-down.svg" alt="">
+                    </div>
                 </div>
             </div>
-            <div class="card-text">
+
+            <div class="p-2">
+                <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center p-20">
+                    <div class="d-flex flex-row align-items-center justify-content-center ">
+                        <img src="./src/assets/icons/morning.svg" alt="">
+                        <h1 class="fs-6 m-0 ps-2 pt-1">Manhã</h1>
+                    </div>
+                        <div>
+                            <h1 class="fs-6 txt-color-secondary m-0">09h-12h</h1>
+                        </div>
+                </div>
+                <div class="card-body">
                 
-                <div class="d-flex  align-items-center justify-content-around">
-                    <p>09:00</p>
-                    <p>Thor</p>
-                    <p>/ Fernanda Costa</p>
+                    <div class="card-text p-20">
+                        <div class="details">
+                            <p class="mb-1 mt-2">
+                                <span class="fw-bold txt-color-primary">09:00</span> 
+                                <span class="ps-3 fw-bold txt-color-primary">Thor </span>
+                                <span class="fw-medium">/ Fernanda Costa</span>
+                            </p>
+                            <p class="mb-2 fw-medium">Vacinação</p>
+                        <a href="#" class="d-flex justify-content-end fw-medium mb-3">Remover agendamento</a>
+                        </div>
+                    
+                    </div>
+                    
                 </div>
-                <p>Vacinação</p>
             </div>
-            <a href="#" class="">Remover agendamento</a>
+        </div>
+
+        <div class="p-2">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center p-20">
+                    <div class="d-flex flex-row align-items-center justify-content-center ">
+                        <img src="./src/assets/icons/afternoon.svg" alt="">
+                        <h1 class="fs-6 m-0 ps-2 pt-1">Tarde</h1>
+                    </div>
+                        <div>
+                            <h1 class="fs-6 txt-color-secondary m-0">09h-12h</h1>
+                        </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-text p-20">
+                        <div class="details">
+                            <p class="mb-1 mt-2">
+                                <span class="fw-bold txt-color-primary">09:00</span> 
+                                <span class="ps-3 fw-bold txt-color-primary">Thor </span>
+                                <span class="fw-medium">/ Fernanda Costa</span>
+                            </p>
+                            <p class="mb-2 fw-medium">Vacinação</p>
+                        <a href="#" class="d-flex justify-content-end fw-medium mb-3">Remover agendamento</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-2">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between align-items-center p-20">
+                    <div class="d-flex flex-row align-items-center justify-content-center ">
+                        <img src="./src/assets/icons/night.svg" alt="">
+                        <h1 class="fs-6 m-0 ps-2 pt-1">Noite</h1>
+                    </div>
+                        <div>
+                            <h1 class="fs-6 txt-color-secondary m-0">09h-12h</h1>
+                        </div>
+                </div>
+                <div class="card-body">
+                
+                    <div class="card-text p-20">
+                        <div class="details">
+                            <p class="mb-1 mt-2">
+                                <span class="fw-bold txt-color-primary">09:00</span> 
+                                <span class="ps-3 fw-bold txt-color-primary">Thor </span>
+                                <span class="fw-medium">/ Fernanda Costa</span>
+                            </p>
+                            <p class="mb-2 fw-medium">Vacinação</p>
+                        <a href="#" class="d-flex justify-content-end fw-medium mb-3 ">Remover agendamento</a>
+                        </div>
+            
+                    </div>
+                    
+                </div>
+            </div>
         </div>
     </div>
-  </div>
-  </div>
+    <div class="d-flex align-items-center justify-content-center w-100 p-4 mt-2 btn-agendamento">
+        <button class="text-uppercase fw-bold fs-6">Novo agendamento</button>
+    </div>
+  
+
 </body>
 </html>

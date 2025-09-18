@@ -17,7 +17,8 @@ module.exports = {
         },
         port: 3000,
         open:true,
-        liveReload: true,
+        hot: true,
+        watchFiles: ['index.html'],
     },
     ignoreWarnings: [
         {

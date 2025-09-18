@@ -2,6 +2,11 @@
 @import "bootstrap/scss/bootstrap";
 
 :root {
+  --content-primary: #fff;
+  --content-secondary: #98959d;
+  --content-tertiary: #666;
+
+
   --bg-primary: #151515;
   --bg-secondary: #1e1e1e;
   --bg-tenrtiary: #23242c;
@@ -21,22 +26,101 @@
 
 body{
     background: var(--bg-primary);
-    color: white;
+    color: var(--content-primary);
 }
 a{
-    text-decoration: none;;
+    text-decoration: none;
+    color: var(--content-tertiary);
+    font-size: 12px;
+}
+p, .txt-color-secondary{
+    color:var(--content-secondary)
+}
+.txt-color-primary{
+    color: var(--content-primary);
+}
+.text-medium{
+    font-size: 14px;
+}
+.text-small{
+    font-size: 12px;
+    line-height: 16px;
+}
+.p-20{
+    padding: 20px ;
+}
+
+h1{
+    font-family: var(--ff-title);
+
+}
+
+button{
+    width: 230px;
+    height: 50px;
+    background: #9282FA;
+    box-shadow: 0px 0px 40px rgba(146, 130, 250, 0.3);
+    border-radius: 8px;
+    border: none;
+    font-family: var(--ff-title);
+}
+div.btn-agendamento{
+    background-color: #23242C;
 }
 div.logo{
     width: 153px;
     height: 48px;
     background: var(--border-primary);
     border-radius: 0px 0px 12px 0px;
-    h1{
-        font-size: 16px;
-    }
-}
-div.card{
-    background-color: var(--bg-secondary);
-    color: #fff;
+  
 }
 
+// input[type="date"]{
+//     width: 183px;
+//     height: 48px;
+//     background-color: transparent;
+//     border: 1px solid var(--border-primary);
+//     color: var(--content-secondary);
+//     padding: 12px;
+//     border-radius: 8px;
+// }
+  .date-input {
+    display: inline-flex;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 8px;
+     border: 1px solid var(--border-primary);
+    padding: 10px 14px;
+    color: var(--content-secondary);
+    cursor: pointer;
+    user-select: none;
+    min-width: 180px;
+  }
+  .date-input .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  .date-input .date-text {
+    flex-grow: 1;
+  }
+
+
+@media (width >= 80em){
+    div.container{
+        max-width: 60%;
+    }
+    div.cabecalho{
+        flex-direction: row!important;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom:10px;
+    }
+    div.btn-agendamento{
+        background-color: transparent;
+        // align-items: flex-end!important;
+        justify-content: flex-end!important;
+        margin-top: -80px!important;
+    }
+}
