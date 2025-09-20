@@ -9,7 +9,7 @@
 
   --bg-primary: #151515;
   --bg-secondary: #1e1e1e;
-  --bg-tenrtiary: #23242c;
+  --bg-tertiary: #23242c;
   --bg-brand: #9282fa;
   --bg-highlights: #bdb4fa;
 
@@ -64,6 +64,20 @@ button{
     border: none;
     font-family: var(--ff-title);
 }
+input, textarea{
+    background-color: transparent;
+    color: var(--content-secondary);
+}
+input:focus, textarea:focus{
+    outline: none;
+}
+textarea{
+    background-color: transparent;
+    border: 1px solid var(--border-primary);
+    border-radius: 8px;
+    padding: 12px;
+}
+
 div.btn-agendamento{
     background-color: #23242C;
 }
@@ -74,37 +88,6 @@ div.logo{
     border-radius: 0px 0px 12px 0px;
   
 }
-
-// input[type="date"]{
-//     width: 183px;
-//     height: 48px;
-//     background-color: transparent;
-//     border: 1px solid var(--border-primary);
-//     color: var(--content-secondary);
-//     padding: 12px;
-//     border-radius: 8px;
-// }
-  .date-input {
-    display: inline-flex;
-    align-items: center;
-    background-color: transparent;
-    border-radius: 8px;
-     border: 1px solid var(--border-primary);
-    padding: 10px 14px;
-    color: var(--content-secondary);
-    cursor: pointer;
-    user-select: none;
-    min-width: 180px;
-  }
-  .date-input .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    flex-shrink: 0;
-  }
-  .date-input .date-text {
-    flex-grow: 1;
-  }
 
 
 @media (width >= 80em){
@@ -122,5 +105,15 @@ div.logo{
         // align-items: flex-end!important;
         justify-content: flex-end!important;
         margin-top: -80px!important;
+    }
+    div.modal-content{
+
+    padding-inline: 20px;
+    }
+    div.container-form-time-date{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
     }
 }

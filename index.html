@@ -23,12 +23,17 @@
                     <p class="pb-2">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
                 </div>
                 <div>
-                    <!-- <input type="date" id="data"> -->
-                     <div class="date-input fs-6" tabindex="0" role="button" aria-label="Selecionar data">
+                    <div class="date-input">
+                        <i><img src="./src/assets/icons/Calendar.png" class="icon"></i>
+                        <input type="date" class="fs-6" id="date" name="date" required>
+                         <img src="./src/assets/icons/arrow-down.svg" alt="">
+                    </div>
+                    
+                     <!-- <div class="date-input fs-6" tabindex="0" role="button" aria-label="Selecionar data">
                         <img src="./src/assets/icons/Calendar.png" alt="Ícone de calendário" class="icon" />
                         <span class="date-text">10/01/2024</span>
                         <img src="./src/assets/icons/arrow-down.svg" alt="">
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
@@ -120,9 +125,84 @@
         </div>
     </div>
     <div class="d-flex align-items-center justify-content-center w-100 p-4 mt-2 btn-agendamento">
-        <button class="text-uppercase fw-bold fs-6">Novo agendamento</button>
+        <button class="text-uppercase fw-bold fs-6" data-bs-toggle="modal" data-bs-target="#exampleModal">Novo agendamento</button>
     </div>
-  
+  <!---------------------------- MODAL ---------------------------------------->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content ">
+        <div class="modal-header d-flex flex-column align-items-start">
+            <div class="d-flex align-items-end justify-content-end w-100">
+            <i class="" data-bs-dismiss="modal" aria-label="Close">
+                <img class="" src="./src/assets/icons/Btn-close.svg" alt="">
+            </i>
 
+            </div>
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Agende um atendimento</h1>
+          
+            <p>Preencha os dados do cliente para realizar o agendamento:</p>
+        </div>
+        <div class="modal-body ">
+            <form class="d-flex flex-column align-items-start w-100">
+                 <div class="mb-3">
+                    <label class="pb-2" for="tutor">Nome do tutor</label>
+                    <div class="text-input">
+                        <i><img src="./src/assets/icons/User.png" alt=""></i>
+                        <input type="text" id="tutor" name="tutor" placeholder="Nome do tutor" required>
+                    </div>
+                    
+                 </div>
+                 <div class="mb-3">
+                    <label class="pb-2" for="pet">Nome do pet</label>
+                    <div class="text-input">
+                        <i><img src="./src/assets/icons/Pet-Paw.png" alt=""></i>
+                        <input type="text" id="pet" name="pet" placeholder="Nome do pet" required>
+                    </div>
+                    
+                 </div>
+                 <div class="mb-3">
+                     <label class="pb-2" for="telefone">Telefone</label>
+                     <div class="text-input d-flex align-items-center">
+                        <i><img src="./src/assets/icons/Phone.png" alt=""></i>
+                        <input type="text" id="telefone" name="telefone" placeholder="(00) 0 0000-0000" required>  
+                     </div>
+                     
+                 </div>
+                 <div class="mb-3 d-flex flex-column">
+                    <label class="pb-2" for="descricao">Descrição do serviço</label>
+                    <textarea class="" id="descricao" placeholder="Descreva o serviço" rows="3"></textarea>
+                 </div>
+                    
+                <div class="container-form-time-date">
+                    <div class="d-flex flex-column mb-3">
+                        <label class="pb-2" for="date">Data</label>
+                 
+                        <div class="date-input ">
+                            <i><img src="./src/assets/icons/Calendar.png" class="icon"></i>
+                            <input type="date" class="fs-6" id="date" name="date" required>
+                            <img src="./src/assets/icons/arrow-down.svg" alt="" class="icon-arrow">
+                        </div>
+                    
+                    </div>
+                    <div class="d-flex flex-column mb-3">
+                        <label class="pb-2" for="time">Hora</label>
+                        <div class="date-input ">
+                        <i><img src="./src/assets/icons/Clock-Circle.png" class="icon"></i>
+                        <input type="time" class="fs-6" id="time" name="time" required>
+                         <img src="./src/assets/icons/arrow-down.svg" alt="">
+                    </div>
+                    </div>
+                   
+                    
+                </div>
+            </form>
+        </div>
+        <div class="modal-footer mb-4">
+   
+            <button type="button" class="text-uppercase fw-bold fs-6" style="width:123px">Agendar</button>
+        </div>
+        </div>
+    </div>
+    </div>
 </body>
 </html>
