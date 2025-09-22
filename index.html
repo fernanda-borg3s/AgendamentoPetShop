@@ -25,15 +25,10 @@
                 <div>
                     <div class="date-input">
                         <i><img src="./src/assets/icons/Calendar.png" class="icon"></i>
-                        <input type="date" class="fs-6" id="date" name="date" required>
-                         <img src="./src/assets/icons/arrow-down.svg" alt="">
+                        <input type="date" class="fs-6" id="date-agendado" name="date" required>
+                         
                     </div>
                     
-                     <!-- <div class="date-input fs-6" tabindex="0" role="button" aria-label="Selecionar data">
-                        <img src="./src/assets/icons/Calendar.png" alt="Ícone de calendário" class="icon" />
-                        <span class="date-text">10/01/2024</span>
-                        <img src="./src/assets/icons/arrow-down.svg" alt="">
-                    </div> -->
                 </div>
             </div>
 
@@ -143,7 +138,7 @@
             <p>Preencha os dados do cliente para realizar o agendamento:</p>
         </div>
         <div class="modal-body ">
-            <form class="d-flex flex-column align-items-start w-100">
+            <form class="d-flex flex-column align-items-start w-100 form">
                  <div class="mb-3">
                     <label class="pb-2" for="tutor">Nome do tutor</label>
                     <div class="text-input">
@@ -180,7 +175,7 @@
                         <div class="date-input ">
                             <i><img src="./src/assets/icons/Calendar.png" class="icon"></i>
                             <input type="date" class="fs-6" id="date" name="date" required>
-                            <img src="./src/assets/icons/arrow-down.svg" alt="" class="icon-arrow">
+                           
                         </div>
                     
                     </div>
@@ -189,20 +184,26 @@
                         <div class="date-input ">
                         <i><img src="./src/assets/icons/Clock-Circle.png" class="icon"></i>
                         <input type="time" class="fs-6" id="time" name="time" required>
-                         <img src="./src/assets/icons/arrow-down.svg" alt="">
-                    </div>
+                                            </div>
                     </div>
                    
                     
                 </div>
+                <div class="modal-footer mb-4">
+   
+            <button type="submit" class="text-uppercase fw-bold fs-6" style="width:123px">Agendar</button>
+        </div>
             </form>
         </div>
-        <div class="modal-footer mb-4">
-   
-            <button type="button" class="text-uppercase fw-bold fs-6" style="width:123px">Agendar</button>
-        </div>
+        
         </div>
     </div>
     </div>
+
+
+
+<div id="placeToAlert"></div>
+
+
 </body>
 </html>
